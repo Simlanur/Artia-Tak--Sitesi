@@ -1,0 +1,167 @@
+/**sidebar**/
+.categorybox {
+	background:#FFF; /* Kategorilerin arka plan rengini beyaz yapar */
+	border-right:1px solid #c2cbd2; /* Sağ kenara gri sınır ekler */
+	border-bottom:1px solid #c2cbd2; /* Alt kenara gri sınır ekler */
+	border-radius:5px; /* Kategorinin köşelerini yuvarlatır */
+	margin-top:5px; /* Üstten 5px boşluk bırakır */
+	padding:20px; /* İçeriğe 20px padding (boşluk) ekler */
+}
+
+.categorybox ul {
+	list-style:none; /* Liste elemanlarının işaretçilerini (örneğin, nokta) kaldırır */
+	margin:0; /* Liste etrafındaki dış boşluğu sıfırlar */
+	padding:0; /* Liste içindeki iç boşluğu sıfırlar */
+}
+
+.categorybox ul li {
+	border-bottom:1px dashed #c2cbd3; /* Liste öğeleri arasına gri kesik çizgi ekler */
+	line-height:30px; /* Satır yüksekliğini 30px yapar */
+	background:url(../images/libg.png) no-repeat 0 1px; /* Arka plan resmini kullanır */
+	text-indent:20px; /* Yazıyı 20px içerden başlatır */
+	padding-top:2px; /* Üstten 2px boşluk bırakır */
+	padding-bottom:2px; /* Alttan 2px boşluk bırakır */
+}
+
+.categorybox ul li:last-child {
+	border-bottom:none; /* Son öğenin altındaki çizgiyi kaldırır */
+}
+
+.categorybox ul li a {
+	color:#495258; /* Bağlantı rengini gri yapar */
+	text-decoration:none; /* Bağlantı metninin altını çizmez */
+}
+
+.categorybox ul li a:hover {
+	color:#39b3ca!important; /* Bağlantıya tıklanırken rengini mavi yapar */
+}
+
+.categorybox ul ul li {
+	clear: both; /* Hem sol hem de sağdaki elemanlardan temizler */
+	float: left; /* Soldan hizalar */
+	width:90%; /* Genişliği %90 yapar */
+	margin-left:15px; /* Sol taraftan 15px boşluk bırakır */
+}
+
+.categorybox ul ul li:last-child {
+	border-bottom:1px dashed #c2cbd3; /* Alt öğenin sonundaki çizgiyi belirtir */
+}
+
+.categorybox ul li {
+	clear:both; /* Liste öğelerinin sol ve sağdaki öğelerle karışmamasını sağlar */
+}
+
+.categorybox ul ul li a {
+	color:#909090; /* İç liste öğelerinin bağlantı rengini gri yapar */
+}
+
+/* Google Fonts ile yazı tipi yükler */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+
+/* Genel stil */
+.well{
+    background-color:#fff!important; /* Arka plan rengini beyaz yapar */
+    border-radius:0!important; /* Köşe yuvarlatmalarını kaldırır */
+    border:black solid 1px; /* Kenarlık ekler */
+}
+
+/* Giriş kutusunun stilini belirler */
+.well.login-box {
+    /*width:400px; */ /* Yorum satırı: kutunun genişliğini 400px olarak belirlemiş, şu anda kapalı */
+    border:#d1d1d1 solid 1px; /* Kenarlık rengini gri yapar */
+    margin:0 auto; /* Ortalar */
+    margin-top:30px; /* Üstten 30px boşluk bırakır */
+}
+
+.well.login-box legend {
+  font-size:26px; /* Başlık yazı boyutunu 26px yapar */
+  text-align:center; /* Başlığı ortalar */
+  font-weight:300; /* Başlık yazısını hafif yapar */
+}
+
+.well.login-box label {
+  font-weight:300; /* Etiket yazı tipini hafif yapar */
+  font-size:13px; /* Etiket yazı boyutunu 13px yapar */
+}
+
+.well.login-box input[type="text"] {
+  box-shadow:none; /* Gölgeleme efekti eklemez */
+  border-color:#ddd; /* Giriş kutusunun kenarlık rengini gri yapar */
+  border-radius:0; /* Giriş kutusunun köşelerini yuvarlatmaz */
+}
+
+/* Hoş geldiniz metninin stilini belirler */
+.well.welcome-text{
+    font-size:21px; /* Yazı boyutunu 21px yapar */
+}
+
+/* Bildirim kutusu stilleri */
+.notification{
+    position:fixed; /* Sabit pozisyonda olur, sayfa kaydırıldığında sabit kalır */
+    top: 20px; /* Üstten 20px boşluk bırakır */
+    right:0; /* Sağda 0px boşluk bırakır */
+    background-color:#FF4136; /* Kırmızı arka plan rengi */
+    padding: 20px; /* İçeride 20px boşluk bırakır */
+    color: #fff; /* Yazı rengini beyaz yapar */
+    font-size:21px; /* Yazı boyutunu 21px yapar */
+    display:none; /* İlk başta gizler */
+}
+
+.notification-success{
+  background-color:#3D9970; /* Başarı mesajı için yeşil arka plan */
+}
+
+/* Bildirim kutusunun görünmesini sağlar */
+.notification-show{
+    display:block!important; /* Görünür yapar */
+}
+
+/* Giriş yapılmış kullanıcılar için buton stilleri */
+.btn-default {
+    color: #333; /* Metin rengini gri yapar */
+    background-color: #f9f9f9; /* Arka plan rengini açık gri yapar */
+    border-color: #ccc; /* Kenarlık rengini açık gri yapar */
+    border: 1px solid; /* Kenarlık ekler */
+    text-align: center; /* Metni ortalar */
+    cursor: pointer; /* Fare imlecini işaretçi yapar */
+    color: #5e5e5e; /* Metin rengini gri yapar */
+    -moz-border-radius: 3px; /* Firefox için yuvarlatılmış köşeler */
+    -webkit-border-radius: 3px; /* Webkit tarayıcılar için yuvarlatılmış köşeler */
+    border-radius: 3px; /* Tüm tarayıcılarda yuvarlatılmış köşeler */
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #f9f9f9)), #f9f9f9; /* Webkit tarayıcıları için arka plan gradyanı */
+    background: -moz-linear-gradient(#fefefe, #f9f9f9), #f9f9f9; /* Firefox tarayıcıları için arka plan gradyanı */
+    background: -webkit-linear-gradient(#fefefe, #f9f9f9), #f9f9f9; /* Diğer Webkit tarayıcıları için arka plan gradyanı */
+    background: linear-gradient(#fefefe, #f9f9f9), #f9f9f9; /* Standart gradyanlı arka plan */
+    border-color: #c3c3c3 #c3c3c3 #bebebe; /* Kenarlık renk geçişi */
+    -moz-box-shadow: rgba(0, 0, 0, 0.06) 0 1px 0, rgba(255, 255, 255, 0.1) 0 1px 0 0 inset; /* Firefox için gölgeleme */
+    -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0 1px 0, rgba(255, 255, 255, 0.1) 0 1px 0 0 inset; /* Webkit tarayıcıları için gölgeleme */
+    box-shadow: rgba(0, 0, 0, 0.06) 0 1px 0, rgba(255, 255, 255, 0.1) 0 1px 0 0 inset; /* Diğer tarayıcılar için gölgeleme */
+}
+
+/* Slider stilleri */
+#slider {
+    font: 19px sans-serif; /* Font tipi ve boyutu */
+    margin: 0px auto; /* Ortalar */
+    position: relative; /* Konumlandırma */
+    width: 100%; /* Genişliği %100 yapar */
+    height: 300px; /* Yüksekliği 300px yapar */
+    overflow: hidden; /* İçeriğin taşmasını engeller */
+}
+
+#kontrol {
+    position: absolute; /* Konumlandırmayı mutlak yapar */
+    right: 0px; /* Sağ tarafa yaslar */
+    bottom: 10px; /* Alt tarafa 10px boşluk bırakır */
+}
+
+#kontrol a {
+    color: #ffffff; /* Bağlantı rengini beyaz yapar */
+    background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+    padding: 10px;
+    text-decoration: none;
+  }
+
+
+
+
+  

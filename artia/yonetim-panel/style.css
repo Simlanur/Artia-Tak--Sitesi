@@ -1,0 +1,159 @@
+@charset "utf-8"; /* CSS belgesinin karakter setini UTF-8 olarak belirler */
+
+/* Genel CSS kuralları */
+body {
+	margin: 0px; /* Sayfanın kenar boşluklarını sıfırlar */
+	padding: 0px; /* Sayfanın içindeki boşlukları sıfırlar */
+	background-image: url(img/bg.png); /* Arka plan resmi olarak bg.png'yi kullanır */
+	background-repeat: repeat; /* Arka planın tekrarlanmasını sağlar */
+}
+
+#site {
+	height: 400px; /* #site alanının yüksekliğini 400px yapar */
+	width: 700px; /* #site alanının genişliğini 700px yapar */
+	background-image: url(img/mainbg.png); /* Arka plan resmi olarak mainbg.png'yi kullanır */
+	background-repeat: no-repeat; /* Arka planın tekrarlanmaması gerektiğini belirtir */
+	margin-right: auto; /* Sağdan otomatik margin (ortalanma sağlar) */
+	margin-left: auto; /* Soldan otomatik margin (ortalanma sağlar) */
+	margin-top: 100px; /* Üstten 100px boşluk bırakır */
+}
+
+#sitebosluk {
+	height: 200px; /* #sitebosluk alanının yüksekliğini 200px yapar */
+	width: 700px; /* #sitebosluk alanının genişliğini 700px yapar */
+	float:left; /* Sol tarafa yaslar */
+}
+
+#ortainput {
+	float:left; /* Sol tarafa yaslar */
+	width:700px; /* Genişliği 700px yapar */
+	height:75px; /* Yüksekliği 75px yapar */
+}
+
+#kullaniciadi {
+	float:left; /* Sol tarafa yaslar */
+	width:350px; /* Genişliği 350px yapar */
+}
+
+#kullaniciadi label {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; /* Yazı tipi ailesini belirler */
+	color: #FFF; /* Yazı rengini beyaz yapar */
+	text-decoration: none; /* Yazı altı çizili olmasın */
+	font-size: 20px; /* Yazı boyutunu 20px yapar */
+	width:150px; /* Etiketin genişliğini 150px yapar */
+	float:left; /* Etiketi sola yaslar */
+	margin-left: 100px; /* Sol taraftan 100px boşluk bırakır */
+}
+
+#kullaniciadiinput {
+	background-image: url(img/kull.png); /* Giriş alanına kull.png arka planını ekler */
+	background-repeat: no-repeat; /* Arka planın tekrarlanmamasını sağlar */
+	background-color: transparent; /* Arka plan rengini şeffaf yapar */
+	height:32px; /* Yüksekliği 32px yapar */
+	width:220px; /* Genişliği 220px yapar */
+	border:0px; /* Kenarlık eklemez */
+	margin-left: 100px; /* Sol taraftan 100px boşluk bırakır */
+	margin-top: 10px; /* Üstten 10px boşluk bırakır */
+	float: left; /* Sol tarafa yaslar */
+	background-position: 0px 0px; /* Arka planın başlangıç pozisyonunu belirler */
+	text-decoration: none; /* Yazının altı çizili olmamasını sağlar */
+	text-indent: 30px; /* Yazının başlangıcını 30px içeriden başlatır */
+}
+
+#kullaniciadiinput input {
+	background-color: transparent; /* Arka planı şeffaf yapar */
+	border:0px; /* Kenarlık eklemez */
+	width:180px; /* Genişliği 180px yapar */
+	height:31px; /* Yüksekliği 31px yapar */
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; /* Yazı tipini belirler */
+	color: #2c75a7; /* Yazı rengini mavi yapar */
+	text-decoration: none; /* Yazının altını çizmez */
+	font-weight: bold; /* Yazıyı kalın yapar */
+}
+
+#sifre {
+	float: left; /* Sol tarafa yaslar */
+	width: 300px; /* Genişliği 300px yapar */
+}
+
+#sifre label {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; /* Yazı tipini belirler */
+	color: #FFF; /* Yazı rengini beyaz yapar */
+	text-decoration: none; /* Yazının altını çizmez */
+	font-size: 20px; /* Yazı boyutunu 20px yapar */
+	width:150px; /* Etiketin genişliğini 150px yapar */
+	float:left; /* Etiketi sola yaslar */
+}
+
+#sifreinput {
+	background-image: url(img/sifre.png); /* Şifre alanına sifre.png arka planını ekler */
+	background-repeat: no-repeat; /* Arka planın tekrarlanmamasını sağlar */
+	background-color: transparent; /* Arka plan rengini şeffaf yapar */
+	height:32px; /* Yüksekliği 32px yapar */
+	width:220px; /* Genişliği 220px yapar */
+	border:0px; /* Kenarlık eklemez */
+	margin-top: 10px; /* Üstten 10px boşluk bırakır */
+	float: left; /* Sol tarafa yaslar */
+	background-position: 0px 0px; /* Arka planın başlangıç pozisyonunu belirler */
+	text-decoration: none; /* Yazının altını çizmez */
+	text-indent: 30px; /* Yazının başlangıcını 30px içeriden başlatır */
+}
+
+#sifreinput input {
+	background-color: transparent; /* Arka planı şeffaf yapar */
+	border:0px; /* Kenarlık eklemez */
+	width:180px; /* Genişliği 180px yapar */
+	height:31px; /* Yüksekliği 31px yapar */
+	margin-left: 3px; /* Sol taraftan 3px boşluk bırakır */
+	font-weight: bold; /* Yazıyı kalın yapar */
+	color: #2c75a7; /* Yazı rengini mavi yapar */
+	text-decoration: none; /* Yazının altını çizmez */
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; /* Yazı tipini belirler */
+}
+
+#alt {
+	width:700px; /* Genişliği 700px yapar */
+	height:40px; /* Yüksekliği 40px yapar */
+	float:left; /* Sol tarafa yaslar */
+}
+
+#hata {
+	color: #FFF; /* Hata mesajının rengini beyaz yapar */
+	text-decoration: none; /* Yazının altını çizmez */
+	font-weight: bold; /* Yazıyı kalın yapar */
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; /* Yazı tipini belirler */
+	font-size: 14px; /* Yazı boyutunu 14px yapar */
+	margin-top: 25px; /* Üstten 25px boşluk bırakır */
+	float: left; /* Sol tarafa yaslar */
+	width: 350px; /* Genişliği 350px yapar */
+	margin-left: 105px; /* Sol taraftan 105px boşluk bırakır */
+}
+
+#hata img {
+	margin-top: 15px; /* Üstten 15px boşluk bırakır */
+}
+
+#hata a {
+	color: #f1a50a; /* Bağlantının rengini sarı yapar */
+	text-decoration: none; /* Bağlantının altını çizmez */
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; /* Yazı tipini belirler */
+}
+
+#girisyap {
+	float:left; /* Sol tarafa yaslar */
+	width:115px; /* Genişliği 115px yapar */
+	height:37px; /* Yüksekliği 37px yapar */
+	margin-right: 30px; /* Sağdan 30px boşluk bırakır */
+}
+
+#girisyap input {
+	background-image: url(img/girisyap.png); /* Giriş yap butonuna girisyap.png arka planını ekler */
+	background-repeat: no-repeat; /* Arka planın tekrarlanmamasını sağlar */
+	float: left; /* Sol tarafa yaslar */
+	height: 37px; /* Yüksekliği 37px yapar */
+	width: 115px; /* Genişliği 115px yapar */
+	border:0px; /* Kenarlık eklemez */
+	text-indent: -99999px; /* Metni görünmez yapar, sadece arka plan görünür */
+	background-color: transparent; /* Arka plan rengini şeffaf yapar */
+	margin-top: 30px; /* Üstten 30px boşluk bırakır */
+}
